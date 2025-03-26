@@ -10,7 +10,7 @@ public class StudentGroup {
         this.students = new HashSet<>();
     }
 
-    public void addStudent(Student student) {
+    public void dodajStudent(Student student) {
         if (students.size() >= 15) {
             throw new IllegalStateException("Grupa jest pełna – maksymalna liczba studentów to 15.");
         }

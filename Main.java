@@ -5,25 +5,25 @@ public class Main {
             Student student2 = new Student("Anna Nowak");
             Student student3 = new Student("Hubert Bogucki");
 
-            student1.addGrade(4);
-            student1.addGrade(3);
-            student1.addGrade(5);
-            student2.addGrade(2);
-            student2.addGrade(4.5);
-            student2.addGrade(3.5);
-            student3.addGrade(5);
-            student3.addGrade(4.5);
-            student3.addGrade(4);
+            student1.dodajOcene(4);
+            student1.dodajOcene(3);
+            student1.dodajOcene(5);
+            student2.dodajOcene(2);
+            student2.dodajOcene(4.5);
+            student2.dodajOcene(3.5);
+            student3.dodajOcene(5);
+            student3.dodajOcene(4.5);
+            student3.dodajOcene(4);
 
-            System.out.println(student1.name + " - zaokraglona średnia: " + student1.calculateRoundedAverage());
-            System.out.println(student2.name + " - zaokraglona średnia: " + student2.calculateRoundedAverage());
-            System.out.println(student3.name + " - zaokraglona srednia: " + student3.calculateRoundedAverage());
+            System.out.println(student1.name + " - zaokraglona średnia: " + student1.zauklaglonaOcena());
+            System.out.println(student2.name + " - zaokraglona średnia: " + student2.zauklaglonaOcena());
+            System.out.println(student3.name + " - zaokraglona srednia: " + student3.zauklaglonaOcena());
 
             StudentGroup group = new StudentGroup("Grupa A");
 
-            group.addStudent(student1);
-            group.addStudent(student2);
-            group.addStudent(student3);
+            group.dodajStudent(student1);
+            group.dodajStudent(student2);
+            group.dodajStudent(student3);
 
             System.out.println(group);
 

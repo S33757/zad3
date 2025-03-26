@@ -10,14 +10,14 @@ public class Student {
         this.grades = new ArrayList<>();
     }
 
-    public void addGrade(double grade) {
+    public void dodajOcene(double grade) {
         if (grades.size() >= 20) {
             throw new IllegalStateException("Student moze miec maksymalnie 20 ocen.");
         }
         grades.add(grade);
     }
 
-    public double calculateRoundedAverage() {
+    public double zauklaglonaOcena() {
         if (grades.isEmpty()) {
             throw new IllegalArgumentException("Brak ocen. Nie mozna obliczyc sredniej.");
         }
